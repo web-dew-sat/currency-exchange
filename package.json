@@ -1,0 +1,14 @@
+{
+  "name": "currency-exchange",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "build": "npm run build --workspaces --if-present",
+    "start:backend": "npm run start --workspace=backend"
+  }
+}
