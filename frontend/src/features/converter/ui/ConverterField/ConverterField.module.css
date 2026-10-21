@@ -41,19 +41,7 @@
     font-size: 24px;
     color: var(--color-muted);
 }
-.currencyCode{
-    font-weight: 500;
-    width: 140px;
-    min-width: 140px;
-    background: #fff;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    justify-content: center;
-    border-radius: 12px;
-}
+
 .fieldResult{
     background: #EFF5E6;
 }

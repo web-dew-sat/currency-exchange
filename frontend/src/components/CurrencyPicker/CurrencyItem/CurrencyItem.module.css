@@ -1,0 +1,28 @@
+.currencyItem{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 16px 20px 16px 14px;
+    transition: background-color var(--duration-hover) ease-in-out;
+    &:hover{
+        background: var(--color-soft);
+    }
+}
+.currencyItemSelected{
+    background: var(--color-soft);
+}
+.code{
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    margin-right: 48px;
+}
+.name{
+    font-size: 14px;
+    color: var(--color-muted);
+    text-transform: capitalize;
+}
+.check{
+    margin-left: auto;
+}

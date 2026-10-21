@@ -1,26 +1,27 @@
 import styles from './ConverterField.module.css'
-import {ChevronDown} from "lucide-react";
-import { type ChangeEventHandler, type FocusEventHandler} from "react";
+import {type ChangeEventHandler, type FocusEventHandler, useId} from "react";
 import clsx from "clsx";
+import {CurrencyPicker} from "@/components/CurrencyPicker";
+import type {CurrencyOption} from "@/types/Currency.ts";
 
-interface Currency {
-    code: string,
-    symbol: string,
-    numeric: string,
-}
+
 
 interface Props {
     label: string,
-    currency: Currency,
+    currency: CurrencyOption,
     readOnly: boolean,
     value: string,
+    options: CurrencyOption[],
+    onSelect: (code: string) => void;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     onBlur?: FocusEventHandler<HTMLInputElement>;
     onFocus?: FocusEventHandler<HTMLInputElement>;
+
 }
 
 export const ConverterField = (props: Props) => {
 
+    const inputId = useId()
 
     const {
         label,
@@ -28,14 +29,16 @@ export const ConverterField = (props: Props) => {
         readOnly,
         onChange,
         value,
+        options,
         onFocus,
         onBlur,
+        onSelect
     } = props
 
 
     return (
         <div className={styles.fieldWrap}>
-            <label className={styles.label} htmlFor={currency.numeric}>{label}</label>
+            <label className={styles.label} htmlFor={inputId}>{label}</label>
 
             <div className={clsx(styles.field, {
                 [styles.fieldResult]: readOnly
@@ -49,15 +52,12 @@ export const ConverterField = (props: Props) => {
                     onChange={onChange}
                     onBlur={onBlur}
                     onFocus={onFocus}
-                    id={currency.numeric}
+                    id={inputId}
                 />
                 <span className={styles.symbol}>
                     {currency.symbol}
                 </span>
-                <div className={styles.currencyCode}>
-                    {currency.code}
-                    <ChevronDown size={16}/>
-                </div>
+                <CurrencyPicker selectedCode={currency.code} options={options} onSelect={onSelect}/>
             </div>
         </div>
     )
