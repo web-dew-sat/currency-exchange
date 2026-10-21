@@ -1,0 +1,22 @@
+.header{
+    margin-bottom: 52px;
+}
+
+.headerLogo{
+    margin-left: 12px;
+>p{
+    font-weight: var(--font-weight-medium);
+    font-size: 12px;
+    color: var(--color-muted);
+}
+}
+.headerLogoTop{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+    p{
+        font-weight: var(--font-weight-semibold);
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,82 @@
+:root {
+  /* Palette from the Paritet UI kit. */
+  --color-canvas: #f6f7f2;
+  --color-surface: #fff;
+  --color-text: #252822;
+  --color-muted: #626b5b;
+  --color-border: #d6dbd0;
+  --color-soft: #eff5e6;
+  --color-primary: #c4f36b;
+  --color-hover: #b7e85a;
+  --color-pressed: #a9d849;
+  --color-dark: #273329;
+  --color-disabled: #e8ebe2;
+  --color-focus: #526f2f;
+  --color-error: #a34f32;
+  --color-error-bg: #fff5f0;
+  --color-subtle-hover: #f1f3eb;
+  --color-subtle-pressed: #e3e9da;
+
+  /* Keep compatibility with the names in the exported Figma tokens. */
+  --color-errorBg: var(--color-error-bg);
+  --color-subtleHover: var(--color-subtle-hover);
+  --color-subtlePressed: var(--color-subtle-pressed);
+
+  /* Typography: font sizes remain relative to the user's browser settings. */
+  --font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-size-body: 14px;
+  --line-height-body: 22px;
+  --font-size-caption: 12px;
+  --line-height-caption: 18px;
+  --font-size-title: 24px;
+  --line-height-title: 32px;
+  --font-size-hero: 36px;
+  --line-height-hero: 44px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  --radius-control: 12px;
+  --radius-card: 20px;
+  --radius-pill: 999px;
+  --control-height: 48px;
+  --control-height-compact: 44px;
+  --hit-area-min: 44px;
+  --icon-size: 16px;
+  --icon-button-size: 20px;
+  --brand-icon-size: 28px;
+  --border-width: 1px;
+  --focus-width: 2px;
+  --focus-offset: 2px;
+
+  /* Shared shell dimensions from APP-SHELL.md. */
+  --sidebar-width: 216px;
+  --topbar-height: 80px;
+  --content-padding-desktop: 40px;
+  --content-padding-mobile: 20px;
+  --content-note-height-desktop: 72px;
+  --content-note-height-mobile: 112px;
+
+  --duration-hover: 120ms;
+  --duration-overlay: 180ms;
+  --duration-spinner: 900ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-hover: 0ms;
+    --duration-overlay: 0ms;
+  }
+}

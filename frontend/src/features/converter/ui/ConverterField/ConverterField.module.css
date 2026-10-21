@@ -1,0 +1,59 @@
+.fieldWrap {
+    width: 100%;
+}
+.label{
+    margin-bottom: 9px;
+    font-size: 12px;
+    color: var(--color-muted);
+    display: block;
+}
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #F5F6F1;
+    border-radius: 12px;
+    transition: box-shadow var(--duration-hover) ease;
+}
+
+.field:focus-within {
+    box-shadow: 0 0 12px 2px color-mix(in srgb, var(--color-focus) 22%, transparent);
+}
+
+@media (forced-colors: active) {
+    .field:focus-within {
+        outline: var(--focus-width) solid Highlight;
+        outline-offset: var(--focus-offset);
+    }
+}
+
+.valueInput{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 32px;
+    font-weight: var(--font-weight-medium);
+}
+.symbol{
+    margin-right: 51px;
+    margin-left: auto;
+    font-size: 24px;
+    color: var(--color-muted);
+}
+.currencyCode{
+    font-weight: 500;
+    width: 140px;
+    min-width: 140px;
+    background: #fff;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    justify-content: center;
+    border-radius: 12px;
+}
+.fieldResult{
+    background: #EFF5E6;
+}

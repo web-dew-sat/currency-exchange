@@ -1,0 +1,27 @@
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 35px;
+}
+.topBarText{
+    font-size: 13px;
+    color: var(--color-muted);
+}
+.topBarSource{
+    color: var(--color-muted);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    a{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

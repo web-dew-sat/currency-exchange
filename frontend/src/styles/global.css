@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/InterVariable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+html {
+  min-inline-size: 320px;
+  min-block-size: 100%;
+  color-scheme: light;
+  font-family: var(--font-family-base);
+  font-size: 100%;
+  font-optical-sizing: auto;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: var(--color-canvas);
+}
+
+body {
+  min-block-size: 100vh;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background-color: var(--color-canvas);
+}
+
+#root {
+  min-block-size: 100vh;
+  isolation: isolate;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-semibold);
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+  line-height: var(--line-height-hero);
+}
+
+h2 {
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+}
+
+p {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: var(--color-focus);
+  text-underline-offset: 0.2em;
+}
+
+button:not(:disabled),
+[type='button']:not(:disabled),
+[type='submit']:not(:disabled),
+[type='reset']:not(:disabled),
+select:not(:disabled),
+summary {
+  cursor: pointer;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: var(--focus-width) solid var(--color-focus);
+}
+
+::selection {
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}

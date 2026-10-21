@@ -1,0 +1,8 @@
+.appLayout {
+    display: grid;
+    grid-template-columns: clamp(12rem, 16vw, 16rem) minmax(0, 1fr);
+}
+.appLayoutMain{
+    min-width: 0;
+    padding: 0 clamp(var(--space-4), 3vw, var(--space-8));
+}

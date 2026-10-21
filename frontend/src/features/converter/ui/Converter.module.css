@@ -1,0 +1,36 @@
+.converter {
+    border-radius: 20px;
+    background: #fff;
+    padding: 24px 28px 44px;
+}
+
+.converterTopBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.currencyPair{
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-muted);
+}
+.converterTitle{
+    font-weight: var(--font-weight-semibold);
+    font-size: 20px;
+}
+
+.fieldsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+}
+
+.reverseBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
