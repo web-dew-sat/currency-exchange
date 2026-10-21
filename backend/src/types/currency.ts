@@ -3,6 +3,7 @@ export type Currency = {
     name: string;
     symbol: string | null;
     coverageEndDate: string | null;
+    numeric: string | null;
 }
 
 export type ApiCurrency = {
@@ -10,4 +11,5 @@ export type ApiCurrency = {
     "name": string,
     "symbol": string | null,
     "end_date": string | null
+    "iso_numeric": string | null;
 }

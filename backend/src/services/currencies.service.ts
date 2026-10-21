@@ -38,6 +38,7 @@ const transformAllCurrencies = (currencies: unknown): Currency[] => {
             name: currency.name,
             symbol: currency.symbol,
             coverageEndDate: currency.end_date,
+            numeric: currency.iso_numeric
         }
     })
 }
