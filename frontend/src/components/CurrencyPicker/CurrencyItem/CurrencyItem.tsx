@@ -1,7 +1,7 @@
 import styles from '@/components/CurrencyPicker/CurrencyItem/CurrencyItem.module.css'
 import {Check} from "lucide-react";
 import clsx from "clsx";
-import type {CurrencyOption} from "@/types/Currency.ts";
+import type {CurrencyOption} from "@/types/currency.types.ts";
 
 interface CurrencyItemProps {
     option: CurrencyOption;

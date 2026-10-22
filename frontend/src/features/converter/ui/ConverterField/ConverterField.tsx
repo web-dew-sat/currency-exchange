@@ -2,7 +2,7 @@ import styles from './ConverterField.module.css'
 import {type ChangeEventHandler, type FocusEventHandler, useId} from "react";
 import clsx from "clsx";
 import {CurrencyPicker} from "@/components/CurrencyPicker";
-import type {CurrencyOption} from "@/types/Currency.ts";
+import type {CurrencyOption} from "@/types/currency.types.ts";
 
 
 

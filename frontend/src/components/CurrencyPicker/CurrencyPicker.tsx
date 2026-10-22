@@ -3,7 +3,7 @@ import {ChevronDown, X} from "lucide-react";
 import {useState} from "react";
 import clsx from "clsx";
 import {CurrencyList} from "@/components/CurrencyPicker/CurrencyList/CurrencyList.tsx";
-import type {CurrencyOption} from "@/types/Currency.ts";
+import type {CurrencyOption} from "@/types/currency.types.ts";
 
 
 

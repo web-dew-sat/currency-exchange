@@ -1,4 +1,4 @@
-import type {CurrencyOption} from "@/types/Currency.ts";
+import type {CurrencyOption} from "@/types/currency.types.ts";
 
 export const mockDataEurCurrency: CurrencyOption = {
     code: 'EUR',

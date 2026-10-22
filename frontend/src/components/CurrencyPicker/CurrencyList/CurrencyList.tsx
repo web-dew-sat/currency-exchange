@@ -1,6 +1,6 @@
 import styles from "./CurrencyList.module.css"
 import {CurrencyItem} from "@/components/CurrencyPicker/CurrencyItem/CurrencyItem.tsx";
-import type {CurrencyOption} from "@/types/Currency.ts";
+import type {CurrencyOption} from "@/types/currency.types.ts";
 
 interface CurrencyListProps {
     options: CurrencyOption[];
