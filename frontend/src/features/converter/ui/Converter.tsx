@@ -7,7 +7,7 @@ import {useGetCurrenciesQuery} from "@/api/currencies/currenciesApi.ts";
 import {ConverterField} from "@/features/converter/ui/ConverterField/ConverterField.tsx";
 import {translateCurrencyName} from "@/utils/translateCurrencyName.ts";
 import { useGetRatesQuery} from "@/api/rates/ratesApi.ts";
-import type {GetRatesArgs, RateDto} from "@/api/rates/rates.types.ts";
+import type {GetRatesArgs} from "@/api/rates/rates.types.ts";
 import {skipToken} from "@reduxjs/toolkit/query";
 import {formatDate} from "@/utils/formatDate.ts";
 
